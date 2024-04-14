@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap")
+  @tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+video {
+  z-index: -1;
+  height: 100%;
+}
+
+.login_page {
+  background: url("../assets/login.jpg");
+}
+
+.aqua_gradient {
+  background: linear-gradient(90deg, #eaeaea 0%, 00fff5 100%);
+  filter: blur(750px);
+}
+
+.btnAnimate {
+  animation: fadeUp 1s linear 2s forwards;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
